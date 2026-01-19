@@ -19,4 +19,5 @@ LINE_COUNT=$(wc -l < "$1")
 echo "The file '$1' has $LINE_COUNT lines"
 #$(...) tells bash to run the command inside these parentheses and give the result back to the variable. 
 #wc -1 is the word count command and the -l flag is what counts the lines
-#LINE_COUNT creates a variable to store the result of the calculation. 
+#LINE_COUNT creates a variable to store the result of the calculation.
+#< "$1": This "feeds" the file ($1) into the command. By using < instead of just typing the filename, wc outputs only the number, without repeating the filename.
