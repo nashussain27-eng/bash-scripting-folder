@@ -23,3 +23,12 @@ file_count=$( ls "$backup_dir" | wc -l )
 #ls "$backup_dir" lists the contents of new backup folder. 
 #The | (pipe) takes output from the ls command and "pours" it directly into the next command as input. 
 echo "Backup complete! Files backed up: $file_count"
+
+
+:'
+%Y represents Year in 4 digits e.g. 2026
+%m represents Month in 2 digits e.g. 01-2026
+%d represents Day in 2 digits e.g. 20-01-2026
+%H	Hour (00-23)	22
+%M	Minute (00-59)	57
+'
